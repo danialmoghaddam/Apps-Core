@@ -12,14 +12,14 @@
     # FACTS #######################################################################
     - name: 'Set Known Facts'
       set_fact:
-        pgrole: 'rutorrent'
+        pgrole: 'rutorrentPrivileged'
         intport: '80'
         extport: '8999'
         intport2: '5000'
         extport2: '5000'
         intport3: '51413'
         extport3: '51413'
-        image: 'linuxserver/rutorrent'
+        image: 'horjulf/rutorrent-autodl'
 
     # CORE (MANDATORY) ############################################################
     - name: 'Including cron job'
